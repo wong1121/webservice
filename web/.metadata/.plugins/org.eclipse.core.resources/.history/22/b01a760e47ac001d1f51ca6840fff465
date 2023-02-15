@@ -1,0 +1,10 @@
+package one;
+
+public class TestB {
+	//객체 생성
+	TestA a = new TestA(;)
+	
+	void showO {
+		System.out.println(num1);
+	}
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class WhileQuizEx05 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+	
+		System.out.print("정수를 입력하시오(종료 -1) >> ");
+		int user = input.nextInt();
+		
+		while(true) {
+			if(user == -1)
+			System.out.print("정수를 입력하시오(종료 -1) >> ");
+			input.nextInt();
+			break;
+			++user;
+		}
+//		System.out.println("총합 >> " );
+		input.close();
+	}
+
+}
+	

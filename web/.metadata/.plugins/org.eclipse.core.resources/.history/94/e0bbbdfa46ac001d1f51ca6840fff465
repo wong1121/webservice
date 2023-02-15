@@ -1,0 +1,8 @@
+package one;
+
+public class TestB {
+	void showO {
+		System.out.println(num1);
+	}
+
+}

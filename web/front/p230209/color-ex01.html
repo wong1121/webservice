@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color 색</title>
+  <style>
+    h1 {
+      color: #19ce60;
+    }
+    h1.one {
+      color: rgb(255, 69, 0);
+    }
+    h1.two {
+      /* alpha : 색 불투명도 - 0.0(완전 투명) ~ 1.0(완전 불투명) */
+      color: rgba(106, 90, 205, .8);
+    }
+    h1.three {
+      /* 
+      hsl (색, 채도, 명도)
+      * 색 : 0 ~ 360 사이의 색상환 각도
+           : 0-빨간색, 120-녹색, 240-파란색
+      * 채도 : 색의 강도, 선명도
+             : [백분율 값] 0% 흑백 - 100% 쨍!한 원색
+      * 명도 : 빛의 밝기, 높은 명도:흰색, 낮은 명도:검정색
+             : [백분율 값] 0% - 검정, 50% - 보통, 100% - 흰색
+      */
+      color: hsl(60, 70%, 50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>css basic</h1>
+  <h1 class="one">css basic</h1>
+  <h1 class="two">css basic</h1>
+  <h1 class="three">css basic</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil saepe exercitationem cumque! Voluptate ut, modi, ipsam accusantium blanditiis, repellendus harum consequatur vitae rem quod aliquid hic eveniet. Laborum, cupiditate.</p>
+
+</body>
+</html>

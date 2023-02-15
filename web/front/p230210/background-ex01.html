@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    .box {
+      border: 5px double #646464;
+      padding: 20px;
+      /* background-color: #0ff; */
+      /* background-image: url(img/fox.jpg); */
+      /* 이미지 반복 : 기본이 반복 */
+      /* repeat | no-repeat | repeat-x | repaet-y */
+      /* background-repeat: no-repeat; */
+      width: 1800px;
+      height: 1000px;
+
+      /* 
+      [이미지 위치 지정]
+      * 가로 x 세로 :
+      - left / center / right x top / center / bottom
+        ex) background-position: right center;
+      
+      *수평(왼/오) x 수직(위/아래)  
+      - left top(기준)    0% 0% (0일때는 단위 생략)
+      - center cneter    50% 50%
+      - right bottom    100% 100%
+        ex) background-position: 100% 50%;
+      
+      *수평(왼/오) x 수직(위/아래)  
+      - px : 아주 세밀한 이동
+      ex) background-position: 100px 120px;
+
+      */
+
+      /* 
+       [스크롤과 상관없이 같은 위치로 고정]
+       background-attachment: fixed;
+
+       [스크롤하면 화면에서 사라짐]
+       background-attachment: scroll;
+      */
+
+      /* shorthand */
+      background: #0ff url(img/fox.jpg) fixed no-repeat;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quia voluptatem accusamus quidem veniam delectus maiores debitis ipsa id, similique praesentium. Odit, molestiae doloremque. Beatae in repellendus nulla nostrum eligendi?</div>
+</body>
+</html>

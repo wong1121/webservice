@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .box {
+      border: 3px solid #0ff;
+      /* inline은 적용이 안 된다 */
+      width: 150px;
+      height: 20px;
+      /* inline은 왼쪽, 오른쪽에만 적용이 된다 */
+      padding: 10px;
+      margin: 10px;
+
+      /* inline element를 block level element처럼 설정 */
+      display: inline-block;
+      text-align: center;
+      line-height: 100%;
+    }
+    .box2 {
+      background-color: #ff0;
+      border: 3px solid #f00;
+      display: inline;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, libero nam, odit quae obcaecati eius officiis adipisci voluptatum dolorum esse rem est? Dolores nostrum repellendus ducimus nam hic, voluptatum eius.</div>
+  <span class="box">Lorem, ipsum.</span>
+  <span class="box">Lorem, ipsum.</span>
+  <span class="box">Lorem, ipsum.</span>
+  <span class="box">Lorem, ipsum.</span>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+  <div class="box2">Lorem, ipsum.</div>
+</body>
+</html>

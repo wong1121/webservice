@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀렉터 문제</title>
+  <style media="screen">
+    #header h1 em { 
+      background-color: orange;
+    }
+    #header p+p {
+      border: 3px solid black;
+    }
+    #container #lead {
+      background-color: lime;
+    }
+    #container div.lead {
+      color: red;
+    }
+    #container ol~p {
+      background-color: lightblue;
+    }
+    #container+p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>css <em>selector</em></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam ut tempora fugit. Voluptates deserunt ut, a necessitatibus voluptatibus odit, incidunt fugiat est autem earum culpa unde totam, consequuntur tenetur?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam ut tempora fugit. Voluptates deserunt ut, a necessitatibus voluptatibus odit, incidunt fugiat est autem earum culpa unde totam, consequuntur tenetur?</p>
+    </div>
+    <div id="container">
+      <p id="lead">Lorem ipsum dolor sit amet.</p>
+      <p class="lead">Lorem ipsum dolor sit amet.</p>
+      <div class="lead">Lorem ipsum dolor sit amet.</div>
+      <ol class="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ol>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque voluptatibus eaque libero blanditiis ea molestiae inventore nam. Dolore perferendis debitis excepturi repellendus. Assumenda id atque ad sed blanditiis natus.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>container 형제</p>
+  </div>
+
+</body>
+</html>

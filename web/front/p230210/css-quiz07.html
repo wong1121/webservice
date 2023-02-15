@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-quiz07</title>
+  <style>
+    .wrap {
+      clear: both;
+    }
+    .wrap>ul>li {
+      list-style: none;
+      float: left;
+      width: 70px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      background-color: rgb(112, 206, 246);
+
+    }
+    .wrap>ul>li>a {
+      font-weight: bold;
+      color: #11265d;
+      text-decoration: none;
+    }
+    .wrap>ul>li>a:hover {
+      display: inline-block;
+      width: 100%;
+      color: #fff;
+      background-color: #00f;
+    }
+    div:nth-child(2) {
+      clear: left;
+      padding-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul>
+      <li><a href="#" class="first">메일</a></li>
+      <li><a href="#">카페</a></li>
+      <li><a href="#">블로그</a></li>
+      <li><a href="#">지식iN</a></li>
+    </ul>
+  </div>
+
+  <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, magni.</div>
+</body>
+</html>

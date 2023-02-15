@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list_리스트</title>
+  <style>
+    .list {
+      /* 블릿(bullet) 제거 */
+      /* list-style: none; */
+      /* 블릿(bullet) 위치 */
+      /* inside | outside(기본) */
+      list-style-position: outside;
+
+      /* 블릿(bullet) 변경 */
+      /* circle | disc(기본) | square | hangul | hangul-consonant */
+      list-style-type: none;
+
+    }
+    ol>li {background-color: bisque;}
+    
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <ol class="list">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+  </div>
+</body>
+</html>

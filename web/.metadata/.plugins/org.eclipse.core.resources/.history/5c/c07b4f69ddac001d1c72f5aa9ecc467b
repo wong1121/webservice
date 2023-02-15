@@ -1,0 +1,23 @@
+class Super {
+	//field : 멤버변수
+	private int numOne;
+	int numTwo;
+	
+	//method
+	void showOne() {
+		System.out.println("showOne() 실행됨");
+	} 
+	public void showTwo() {
+		System.out.println("showTwo() 실행됨");
+	}
+}
+
+class Sub {
+	
+}
+
+public class AccessEx02 {
+	public static void main(String[] args) {
+
+	}
+}

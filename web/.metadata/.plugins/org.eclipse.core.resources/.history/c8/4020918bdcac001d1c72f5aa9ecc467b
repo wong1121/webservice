@@ -1,0 +1,24 @@
+package per;
+
+// 클래스 접근 권한에 아무것도 자리없으면 default가 되기때문에 public이라고 붙여줘야 함.
+// 기본적으로 클래스 내 멤버 변수들은 private로 숨겨둔다.(소중한거야...)
+public class CirclePerimeter {
+	private double rad;
+	private final double PI;
+	
+//	얘는 생성자 = 클래스명과 같아야 한다. Circle -> Circleperimeter
+	CirclePerimeter (double r) {
+		rad = r;
+		PI = 3.14;
+	}
+	public double getPerimeter() {
+		return (rad*2)*PI;
+	}
+}
+
+//public class CirclePerimeter {
+//	public static void main(String[] args) {
+//		Circle c = new Circle(1.5);
+//		System.out.println("반지름이 1.5인 원의 둘레 : " + c.getPerimeter());
+//	}
+//}

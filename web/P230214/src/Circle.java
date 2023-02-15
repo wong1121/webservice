@@ -1,0 +1,15 @@
+import area.CircleArea;
+import per.CirclePerimeter;
+
+public class Circle {
+	public static void main(String[] args) {
+		
+		CircleArea ca = new CircleArea(1.5);
+//		외부접근 >> CircleArea get메소드에서 내부접근으로 출력 
+		System.out.println("원 넓이 >>" + ca.getArea());
+//		ca.rad = 1.5;
+		
+		CirclePerimeter cp = new CirclePerimeter(1.5);
+		System.out.println("원 둘레 >> " + cp.getPerimeter());
+	}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position-absoulte</title>
+  <style>
+    .content {
+      background-color: #ff0;
+      width: 100%;
+      height: 1000px;
+    }
+    .a {
+      background-color: #eee;
+    }
+    .a .here {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      /* height: 50px; */
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+    }
+    .b {
+      background-color: #999;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="a">
+      A Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ducimus voluptatem nihil omnis. Reiciendis consectetur ad necessitatibus ratione inventore corrupti tempore deserunt nam dolor eum sint explicabo voluptas, sed vel.
+      <div class="here">
+        here
+      </div>
+    </div>
+    <div class="b">B Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident commodi harum fugit voluptatem modi corrupti eius qui doloremque. Doloremque iste deserunt nisi magnam? Consectetur odio debitis rem aliquid totam id.</div>
+  </div>
+</body>
+</html>

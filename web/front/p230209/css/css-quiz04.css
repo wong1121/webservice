@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* 초기화 작업 ( 기존에 적용된 스타일 제거) */
+ol, ul {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+#header ul li {
+  display: inline;
+  /* padding: 10px 30px;
+  border: 2px solid #000; */
+}
+#header ul li a:hover {
+  text-decoration: none;
+}
+#header ul li a {
+  /* text-decoration: none; */
+  padding: 10px 30px;
+  border: 2px solid coral;
+  background-color: coral;
+  color: #fff;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 웹1_response</title>
+  <style>
+    #wrap {
+      width: 970px;
+      background-color: #ff0;
+      margin: 0 auto;
+    }
+    /* 
+    [미디어쿼리]
+    - 일반 스타일보다 아래 작성(만들어진 후에 지정)
+    - 특정 기기에서 스타일을 다르게 적용
+    - 미디어 타입 : all, screen(화면), print(프린터), tv(텔레비전)
+
+    *max-width : 최대 너비, ~이하
+    *min-width : 최소 너비, ~이상
+    */
+
+    /* 
+    1. ------------------------------
+    [min-width : 1200px]
+    - 최소 너비가 1200px일 때
+    - 웹 브라우저 너비가 1200px 이상
+    */
+    @media screen and (min-width: 1200px) {
+      #wrap {
+        font: 15px/2em serif;
+        width: auto;
+        background-color: bisque;
+      }
+    }
+    /* 
+    2---------------------------------
+    [max-width : 970px]
+    - 최대 너비가 970px일 때
+    - 웹 브라우저 너비가 970px 이하
+    */
+    @media screen and(min-width: 480px) and (max-width: 970px) {
+      #wrap {
+        font: 12px sans-serif;
+        width: auto;
+        background-color: rgb(190, 147, 190);
+        color: azure;
+      }
+    }
+    /* 
+    3.--------------------------------
+    [max-width : 480px]
+    - 최대 너비가 480일 때
+    - 너비 : 480px
+    */
+    @media screen and (max-width: 480px) {
+      #wrap {
+        font: 32px sans-serif;
+        width: auto;
+        background-color: cadetblue;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>LOGO</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In earum tempore tempora exercitationem. Error eos, mollitia recusandae illum ullam soluta tenetur. Commodi animi consequuntur nulla! Facilis incidunt minus culpa suscipit!</p>
+  </div>
+</body>
+</html>

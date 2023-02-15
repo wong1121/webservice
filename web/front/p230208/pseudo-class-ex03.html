@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-class</title>
+</head>
+<style>
+  /* css2 문법 = child */
+  /* 부모가 누구든 첫 번째 li */
+  /* li:first-child {
+    background-color: bisque;
+  } */
+
+  /* css3 문법 = 부모를 찾아가서 찾는 type */
+  /* 부모가 누구든 첫 번째 li */
+  /* li:first-of-type {
+    background-color: #ff0;
+  } */
+
+  /* 부모가 ul인 li 중 첫 번째 li */
+  ul>li:first-of-type {
+    background-color: #ff0;
+  }
+  /* 부모가 ul인 li 중 마지막 li */
+  ul>li:last-of-type {
+    background-color: beige;
+  }
+
+  /* 몇 번째 자식 */
+  /* css3 문법 */
+  ul>li:nth-of-type(2) {
+    color: #f00;
+  }
+  ul>li:nth-of-type(2n+1) {
+    font-style: italic;
+    color: #0f0;
+  }
+
+  /* css2 문법 */
+  li:nth-child(2) {
+    background-color: aqua;
+  }
+
+</style>
+<body>
+  <h1>pseudo-class</h1>
+  <ul>
+    <ol>
+      <li>추가된 리스트1(item)</li>
+      <li>추가된 리스트2(item)</li>
+      <li>추가된 리스트3(item)</li>
+    </ol>
+    <li>첫 번쩨</li>
+    <li>두 번째</li>
+    <li>세 번째</li>
+  </ul>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, et repudiandae debitis, fugit mollitia a, delectus perspiciatis repellat iusto adipisci esse corrupti commodi voluptatem. Accusamus libero animi veritatis minima voluptatibus.</p>
+</body>
+</html>

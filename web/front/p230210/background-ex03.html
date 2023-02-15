@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background</title>
+  <style>
+    .box {
+      width: 400px;
+      height: 100PX;
+      border: 3px solid #646464;
+      padding: 20px;
+      margin: 30px;
+      background: url(img/fox.jpg) no-repeat center center;
+      color: #fff;
+    }
+    .box2 {
+      /* 
+      [배경 이미지 크기]
+      - 가로, 세로 꽉 차게 (비율 깨짐)
+      ex) background-size: 100%;
+
+      - 가로 꽉 차고, 세로 비율 유지(공백생성)
+      ex) background-size: 100% auto;
+
+      -비율 유지, 이미지 다 표현(공백생성) 
+      ex) background-size: contain;
+
+      -비율 유지, 이미지 크롭되서 공백없이 표현
+      background-size: cover;
+
+       */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nam soluta. Culpa nesciunt animi aliquam esse expedita consequuntur ut quod fugiat quisquam, numquam, minima est maiores qui nihil dolorum aut.</div>
+  <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nam soluta. Culpa nesciunt animi aliquam esse expedita consequuntur ut quod fugiat quisquam, numquam, minima est maiores qui nihil dolorum aut.</div>
+</body>
+</html>

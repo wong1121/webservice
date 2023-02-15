@@ -1,0 +1,29 @@
+/*
+ * [다형성]=====
+ * 
+ */
+class Parent {
+	private int money = "100000";
+	
+	public void spend(int money) {
+		this.money -= money;
+		System.out.println("남은 돈은" + this.money + "입니다");
+	}
+	
+	private void working() {
+		System.out.println("부모님은 열심히 일하는 중입니다.");
+	}
+}
+class Son {
+	
+	
+}
+class Daugther{
+	
+}
+
+public class PolymorhismEx01 {
+	public static void main(String[] args) {
+
+	}
+}

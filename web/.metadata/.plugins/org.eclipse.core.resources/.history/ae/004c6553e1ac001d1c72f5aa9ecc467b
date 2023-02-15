@@ -1,0 +1,45 @@
+class Super {
+	//field : 멤버변수 - instance field, class(static) field
+	private int numOne;
+	int numTwo;
+	
+	//method : 멤버메소드 - instance method(heap영역), class(static) method
+	void showOne() {
+		System.out.println("showOne() 실행됨");
+	} 
+	public void showTwo() {
+		System.out.println("showTwo() 실행됨");
+	}
+}
+
+class Sub extends Super {
+	// 자식이 부모의 멤버변수 접근====
+	void setNumOne() {
+		super.numOne = 1; // int numOne = 접근 권한이 private 이라서 자식에게도 허용하지 않음
+	}
+	
+	public void voidsetNumTwo() {
+		super.numTwo = 2;
+	}
+	
+	//method overriding 나한테 없는걸 부모에게서 가져오지 내가 가지고 있으면 부모꺼 안 씀.
+	void showOne() {
+		System.out.println("오버라이딩된 showOne() 실행됨");
+	}
+	// [overriding 된 메서드의 접근 권한]======
+	// 상속관계에서 overriding된 메서드의 접근권한은 부모의 접근권한 보다 크거나 같아야 함. 
+	// 부모의 method가 현재 public 임으로 자식의 method 또한 public이 되어야 함.
+	public void showTwo() {
+		System.out.println("오버라이딩된 showOne() 실행됨");
+	}
+}
+
+public class AccessEx02 {
+	public static void main(String[] args) {
+		
+		Sub s = new Sub();
+		s.showOne();
+		s.showTwo();
+
+	}
+}

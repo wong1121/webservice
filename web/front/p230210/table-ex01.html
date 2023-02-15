@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    .tbl {
+      /* 셀과 셀이 떨어져 있어서 붙여주기 위해 사용 = 항상 테이블에 사용 
+      [cell 사이 여백]
+      - separate(분리) | collapse
+      */
+      border-collapse: collapse;
+
+      width: 800px;
+
+      /* 셀 내 텍스트 길이에 상관없이 너비 일정유지 */
+      table-layout: fixed;
+      text-align: center;
+    }
+    .tbl caption {
+      /* 캡션 위치 */
+      caption-side: top;
+
+      /* 캡션 숨기기 */
+      /* 1. display = 캡션이 위치한 영역도 사라짐 */
+      display: none;
+
+      /* 2. text-indent */
+      /* 들여쓰기 내어쓰기 = 캡션이 위치한 영역이 지켜짐(왜냐면 저기 어딘가로 없어진거라) */
+      /* text-indent: -150em; */
+    }
+    .tbl td, .tbl th {
+      border: 1px solid #000;
+    }
+    /* .tbl th.col1 {
+      열에 너비 지정하면 순수하게 content 값으로만 적용 */
+      /* width: 250px;
+    } */
+    tbody tr:nth-of-type(2n+1) {
+      background-color: #ff0;
+    }
+    /* tbody tr:nth-child(2n+1) {
+      background-color: #ff0;
+    } */
+  </style>
+</head>
+<body>
+  <table class="tbl">
+    <caption>table caption</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="col1">table header cell-1</th>
+        <th scope="col">table header cell-2</th>
+        <th scope="col">table header cell-3</th>
+        <th scope="col">table header cell-4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>table data cell-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, culpa?</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+      <tr>
+        <td>table data cell-1</td>
+        <td>table data cell-2</td>
+        <td>table data cell-3</td>
+        <td>table data cell-4</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

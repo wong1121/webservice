@@ -1,0 +1,6 @@
+package two;
+import one.TestA;
+
+public class TestE extends TestA {
+
+}

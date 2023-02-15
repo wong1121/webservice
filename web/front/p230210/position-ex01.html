@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <style>
+    /* 
+    [position]
+    static | relative | absolute | fixted | sticky
+      1 ) static(default값)
+        - 원래 자기 자리 (좌상단에서부터 쌓이기 시작)
+        - top, left등 인식 안 됨 : 위치 이동 안됨
+      2) relative
+        - 상대적인
+        - 기존 영역 그대로 인식_남겨둔다. (layout 틀어지지 않음)
+        - 원래 자기 자리에서 이동
+        -즉, static 기준으로 이동
+      3) absolute
+        - 절대적인
+        - 기존 영역 인식 안 함_남겨두지 않음 (layout 틀어짐)
+        - 부모 위치 기준으로 인식
+        - static일 제외하고 나머지를 부모로 삼는다.
+        - 부모가 body일 경우, 웹 브라우저 시작 위치 기준
+      4) fixed
+        - absoulte 비슷
+        - 화면 스크롤되어도 그 위치 그대로
+        - 무조건 웹 브라우저 기준
+    */
+    
+    .box {
+      position: fixed;
+      left: 100px;
+      top: 100px;
+      width: 400px;
+      background-color: #ff0;
+      padding: 20px;
+      font: 16px verdana;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nihil.</div>
+  <hr>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas natus quaerat recusandae facere in inventore illum nulla eaque magnam? Voluptate perferendis suscipit molestias similique libero consequatur odio quisquam itaque culpa tempore excepturi, dolorum, corporis sint eaque eligendi quia veritatis. Odit veniam eligendi quasi cumque? Expedita quae unde facilis corrupti ullam commodi modi, alias fugiat, animi ratione odio. Molestiae impedit odio voluptas modi earum sint commodi est dolore consequuntur atque iure, nihil provident velit facere quibusdam quos laudantium laboriosam distinctio sequi. Sunt maiores consequatur optio sequi, soluta voluptatibus. Maiores repudiandae optio amet nostrum sit. Repudiandae ea numquam explicabo inventore! Doloremque ducimus explicabo, unde blanditiis numquam iste quae animi. Facere quos quisquam adipisci error, fugiat autem cumque tempora iure? Excepturi doloribus fugit porro inventore sint similique doloremque officiis aliquam eum quisquam consectetur ab, facere exercitationem, eligendi, aliquid fugiat nihil natus qui obcaecati nostrum reiciendis? Suscipit, porro esse? Libero ullam, illum id harum voluptate qui veritatis quisquam, facilis corrupti rem maxime recusandae necessitatibus magnam dolore voluptas commodi dolorum ipsum ea soluta incidunt possimus iste? Tempore, nemo? Accusantium expedita nobis, aliquam distinctio nemo blanditiis, ullam dolor obcaecati rerum, eum accusamus. Rem cum soluta, ut nihil qui harum a corrupti culpa ducimus veniam quibusdam, voluptatibus nesciunt dolore fugit? Vitae magni ipsum saepe modi deleniti eos hic omnis iure nisi recusandae voluptatum tempora eligendi corrupti cumque unde sed odio tenetur cupiditate pariatur nesciunt officia, enim necessitatibus optio. Dolor, facilis sit libero molestiae consectetur cupiditate in, dolore earum repellat corrupti, sunt quos quaerat temporibus labore animi mollitia officiis nam saepe est qui obcaecati vero laboriosam vel tenetur. Ullam, eos! Veniam odit fugit animi dolorum. Debitis quam ex asperiores maiores numquam quasi mollitia, reprehenderit accusamus voluptates cupiditate nulla veritatis doloremque. Sed quod molestias doloribus facilis expedita velit dolores ratione, voluptatum, corporis, illum aperiam aut temporibus! Omnis repudiandae, harum impedit reprehenderit pariatur nulla illo est velit consequatur error dignissimos itaque deserunt! Sit dolore ad tenetur sint hic quidem debitis voluptatum doloribus vero. Minus eaque molestias, reprehenderit expedita error repellendus debitis ad recusandae consequuntur ipsum maxime quae? Facere tenetur ex quaerat, in placeat sint eius autem quia quod tempore. Porro adipisci, quae id qui iste necessitatibus commodi laboriosam explicabo ipsum culpa. Tempore dolores saepe itaque quas distinctio, doloremque illo adipisci at ducimus quibusdam accusamus in non nisi? Sed nulla, libero perferendis voluptatum ut esse placeat aliquid necessitatibus adipisci nesciunt. Vitae, dolore delectus excepturi veniam eius unde quos ab natus esse soluta provident sequi distinctio dolor, neque similique. Deleniti cum esse quidem impedit unde odit placeat dignissimos, in, quas reiciendis itaque ad maiores nisi laudantium perferendis ducimus nihil similique sequi! Labore repellat debitis a adipisci nihil aliquam molestias, esse unde beatae eius ducimus sint natus omnis sapiente ullam dolores dolor ipsum obcaecati eligendi? Consequatur eligendi ab quod quibusdam asperiores eaque quis odit dicta blanditiis sint mollitia in doloremque soluta, nam id labore, qui libero sapiente fugit laudantium iure deserunt sed? Doloribus nostrum reiciendis pariatur nam dolore hic, provident, corrupti esse eveniet, ipsum rerum obcaecati voluptatibus ut iste vitae deleniti magnam!</p>
+</body>
+</html>

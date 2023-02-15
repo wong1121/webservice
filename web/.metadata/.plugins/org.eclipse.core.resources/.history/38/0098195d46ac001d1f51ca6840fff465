@@ -1,0 +1,15 @@
+package one;
+
+public class TextA {
+	// field : 멤버 변수
+	private int num1;
+	int num2;
+	protected int num3;
+	public int num4;
+	
+	void show( ) {
+		System.out.println(num1);
+	}
+	
+
+}

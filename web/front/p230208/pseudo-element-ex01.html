@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-element</title>
+  <style>
+    /* 
+    [가상엘리먼트] 부분
+    플롯 해제 : before, after
+    */
+    h1::before {
+      content: "BEFORE";
+      color: #f00;
+    }
+    h1::after {
+      content: "AFTER";
+      color: #00f;
+    }
+    p::first-line {
+      color: #f00;
+    }
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      background-color: #ff0;
+    }
+    p::selection {
+      background-color: aquamarine;
+      color:cadetblue 
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>pseudo-element</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate unde harum praesentium aspernatur, adipisci impedit architecto saepe maiores, alias officia assumenda dolorum possimus libero velit magni laudantium quis iusto id.</p>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    img {
+      vertical-align: top;
+    }
+    #wrap {
+      background-color: #ff0;
+      width: 800px;
+      
+      /* 가로 가운데 */
+      margin: 0 auto;
+    }
+    #wrap h1 {
+      padding: 20px 0;
+    }
+    #wrap .img_list {
+      /* overflow: hidden; */
+    }
+    #wrap .img_list::after {
+      content: "";
+      display: block;
+      /* float 설정과 같은 값으로 */
+      /* left | right | both */
+      clear: left;
+    }
+    #wrap .thumb {
+      /* [float] left, right */
+      float: left;
+      border: 3px solid #646464;
+    }
+    #wrap .append {
+      color: #f00;
+      /* clear: left; */
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <h1>float example</h1>
+    <div class="img_list">
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/00f/0ff/?text=A" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/00f/0ff/?text=B" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/00f/0ff/?text=C" alt="">
+      </div>
+      <div class="thumb">
+        <img src="https://via.placeholder.com/100/00f/0ff/?text=D" alt="">
+      </div>
+    </div >
+    <p class="append">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facere quia autem tenetur dignissimos, architecto nemo odio doloribus ab ut quo harum voluptate, quaerat tempore, sunt obcaecati esse? At, qui!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio ipsam vel quaerat nesciunt dolorum, numquam temporibus nulla perferendis a dignissimos commodi aliquid possimus, nemo magnam consequatur accusantium reprehenderit officia? Natus dolor saepe deleniti? Labore at dolor vel est eum alias vero facilis? Atque nisi hic, assumenda quae quo libero officiis, nulla sit unde harum eaque iusto ea, at et cum officia fugiat alias! Praesentium ex nulla eligendi rem, delectus beatae id minus alias quos aperiam mollitia, nesciunt, fugiat numquam veritatis! Necessitatibus deleniti iusto voluptatum facere quisquam modi laborum in laudantium pariatur, provident fugiat sequi. Ducimus, eum, quod nam ea deleniti nesciunt optio assumenda ex quisquam, quibusdam soluta iure. Minus assumenda sunt deleniti ab itaque omnis doloremque, nisi ex officiis quaerat consectetur natus unde blanditiis est aliquid eum illum! A laudantium error ducimus accusamus voluptatum excepturi quo eligendi incidunt ex? Pariatur impedit repudiandae excepturi enim dicta odio vel distinctio quasi? Earum est nulla doloribus repellat commodi voluptatibus, harum, itaque corporis, quasi fugiat veritatis consectetur dolores veniam? Architecto, natus provident! Rerum veniam amet et expedita ut officiis aliquam delectus facere perferendis culpa molestias sapiente, molestiae, omnis incidunt distinctio sed quaerat quae doloremque quam dolorum. Harum repudiandae saepe aliquam rem accusantium blanditiis nobis cum nesciunt. Voluptatum, eligendi, ducimus ea delectus ullam, officia nesciunt fuga culpa ipsam commodi provident debitis dolorem inventore? Cumque molestiae quae exercitationem quisquam praesentium minus autem quia, quidem distinctio temporibus, quo, voluptate odit nesciunt architecto deserunt non dicta officia. Amet fugiat nemo provident tenetur eveniet dolor necessitatibus quo, neque magni hic, praesentium quam cumque porro similique in, atque dolore fuga ratione optio velit aliquam beatae ex nihil. Omnis magnam illum similique minima maxime fugit sit, esse reprehenderit a? Temporibus modi laboriosam eligendi laborum dolores pariatur obcaecati excepturi provident, accusantium est suscipit fugit debitis minus nesciunt quia veritatis? Nemo, suscipit sequi laboriosam ut eum ullam officiis maiores illo animi harum reiciendis molestias vero perferendis distinctio alias velit autem dicta quaerat? Numquam ad id est porro eaque libero tempore, atque vero sint natus facilis, laboriosam expedita aspernatur commodi exercitationem, animi obcaecati neque maxime eligendi incidunt debitis repellendus minus cum ipsum. Perferendis facilis error labore corrupti voluptatum soluta assumenda, ipsum pariatur eveniet aut nostrum reprehenderit officiis aliquam explicabo provident nihil nemo eos deserunt. Ratione iste tenetur nisi dolores dignissimos quidem praesentium officiis corrupti explicabo ipsam esse consequatur itaque amet, mollitia error placeat doloribus exercitationem incidunt quis numquam modi inventore earum hic illo? Consequuntur vel, ipsa aut, cupiditate possimus illo officia, odit cum eos quaerat recusandae! Perferendis quae, consequatur provident, nemo repellat, debitis dignissimos quis illo quo magnam possimus facilis? Repellat vel itaque repudiandae autem voluptatem, sed quasi officia. Quam nemo pariatur error possimus vel cum consectetur veritatis rerum doloremque dolore sapiente molestias accusamus voluptate, soluta eos natus dolorem blanditiis? Nostrum exercitationem totam molestiae assumenda id! Harum corrupti dolor esse eius earum, animi molestias minima quisquam soluta adipisci maxime ducimus cumque nisi expedita porro vel perferendis ratione. Corrupti minima debitis minus hic praesentium? Quis quo quae assumenda nostrum maxime ipsum natus nisi unde.</p>
+  </div>
+  
+</body>
+</html>

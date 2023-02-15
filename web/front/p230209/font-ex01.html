@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <title>폰트 단위</title>
+  <style>
+    body {
+      font-variant: small-caps;
+    }
+    #size_px {font-size: 32px;}
+    /* 1em = 16px(부모 기준으로 몇 배인데 body, html에 지정 사이즈가 없어 웹 브라우저 기본 사이즈가 기준인 16px) */
+    #size_em {font-size: 2em;}
+    /* 1vw = 웹 브라우저 사이즈의 1% */
+    #size_vw {font-size: 10vw; font-family: 'Barlow', sans-serif;}
+  </style>
+</head>
+<body>
+  <div>
+    <div id="weap">
+      <h2>font size : px</h2>
+      <div id="size_px">Lorem ipsum dolor sit amet.</div>
+
+      <h2>font size : em</h2>
+      <div id="size_em">Lorem ipsum dolor sit amet.</div>
+
+      <h2>font size : vw(viewport width)</h2>
+      <div id="size_vw">Lorem ipsum dolor sit amet.</div>
+    </div>
+  </div>
+</body>
+</html>

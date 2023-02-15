@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font style</title>
+  <style>
+    /* 초기화 작업 */
+    html {
+      font-size: 10px;
+    }
+    body, h1, h2, h3, h4, h5, h6 {
+      font-size: 12px;
+      font-family: '돋음', dotum, sans-serif;
+    }
+    h1 {
+      font-size: 3em;
+      font-weight: normal;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    p.lead {
+      font-size: 1.2em;
+      font-weight: bold;
+      /* normal | italic | oblique */
+      font-style: normal;
+      /* normal | small-caps:알파벳을 모두 대문자화 */
+      font-variant: small-caps;
+    }
+    div {
+      /* font-size: 2rem;
+      font-family: sans-serif, serif;
+      font-weight: normal;
+      font-style: italic;
+      font-variant: small-caps;
+      line-height: 2em; */
+
+      /* shorthand */
+      font: normal small-caps normal 2rem/2em snas-serif, serif; 
+    }
+  </style>
+</head>
+<body>
+  <h1>font style</h1>
+  <h2>font style</h2>
+  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptate a accusantium, laudantium error totam magni. Adipisci, rerum est minima, voluptatem neque eaque amet similique beatae sit omnis aut ducimus.</p>
+  <div>아주 평화로운 천장. 이곳은 콩코드 광장. 작은 크리스탈 샹들리에는 꺼졌고, 분수는 어둠 속에 있다. 그 어떤 것도 광장에 없다. 우리는 벽지 아래로 들어가야 한다. 곤충 검투사들을 만나기 위해. 그물과 삼지창으로 싸우기 위해. 그리고 분수와 광장을 떠난다. But, oh! We could sleep over there.</div>
+</body>
+</html>

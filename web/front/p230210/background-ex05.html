@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>top button</title>
+  <style>
+    #wrap {
+      width: 200px;
+      background-color: bisque;
+      padding: 20px;
+    }
+    a.content-top::before {
+      display: inline-block;
+      /* 가상element때문에 content가 있어야 빰! */
+      content: '';
+      width: 51px;
+      height: 51px;
+      background-image: url(img/sp_main_947f65.png);
+
+      /* 아이콘모음파일 사이즈가 커서 반으로 줄임 */
+      background-size: 442px 428px;
+      /* 아이콘 위치 조정 */
+      background-position: -150px -210px;
+    }
+    /* 클래스가 가상클래스보다 먼저 와야한다. */
+    a.content-top:hover::before {
+      background-position: -203px -210px;
+      content: '';
+      position: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ipsum adipisci consectetur optio asperiores inventore officiis, perspiciatis velit ex qui veniam aperiam eveniet temporibus facilis. Excepturi, quibusdam tempore! Similique, numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus voluptatum ipsum nulla fugit cumque cupiditate. Iure necessitatibus doloribus est magni quos blanditiis delectus placeat at ullam voluptates corrupti sed, nisi cum harum. Voluptate quam deleniti in reiciendis dolorem rerum, consectetur repellat cupiditate sapiente. Hic soluta doloribus at. Enim placeat ut, iste praesentium quos fuga aperiam et quis a corporis, iusto rerum at illo voluptate facilis magnam tempore exercitationem animi excepturi modi ullam. Necessitatibus illum, laboriosam magnam, porro velit esse molestias fuga iste cumque nobis doloribus animi expedita laudantium sed, vero dolorum sunt impedit provident. Repellendus dolor amet, dicta error nihil excepturi, atque eius praesentium ad odit est quas reprehenderit! Iure error rerum inventore quos magnam voluptatem commodi placeat amet ex, autem, sequi repudiandae! Architecto accusantium dicta modi saepe repellendus deleniti distinctio molestiae placeat amet dignissimos nihil error natus illum ab sit vero repudiandae officia, incidunt possimus a maiores dolore asperiores laudantium reprehenderit? Rem libero sequi deleniti illum et doloribus dolores distinctio nisi odit. Temporibus voluptatum sed impedit repellendus! Ullam architecto sequi dolore ab explicabo culpa porro officia, suscipit repudiandae id numquam, nesciunt natus, veniam illo nemo at nam amet! Libero quas facilis a similique laborum. Quis veniam excepturi libero illo ea facere ducimus dolore possimus, explicabo eos ipsa magni dignissimos aspernatur ab, animi beatae similique, quisquam praesentium error odio! Alias aliquam nemo eligendi excepturi eius asperiores quibusdam vitae iste explicabo laudantium porro inventore, facilis, voluptatem earum. Dolorem non cumque distinctio ut ducimus dolorum laborum molestias recusandae nobis itaque alias, in magni doloremque qui vitae exercitationem deleniti amet voluptatem. Eligendi asperiores reiciendis sint modi officiis voluptates fuga nulla facilis fugit, omnis voluptatibus quibusdam quas id, eveniet nihil est. Accusantium magnam nesciunt, quos similique facere soluta animi corporis ipsam perspiciatis sequi hic assumenda molestias dignissimos temporibus corrupti quisquam beatae doloremque. Dolore laboriosam nemo esse sed voluptatibus. Vitae recusandae maxime, quam quod vel nesciunt ad eaque mollitia quo dolorem tenetur? Ea corrupti eligendi, ipsa sequi laborum dignissimos dolores asperiores a eveniet aspernatur neque, incidunt ipsum nam repellat molestiae similique natus odit! Illum omnis saepe, veritatis nostrum unde eveniet minima distinctio? Dolores pariatur sapiente fugiat molestiae. Numquam eos harum saepe dolor maiores enim itaque, vel fugit repellendus dolorum dignissimos? Blanditiis debitis, sapiente nulla tenetur saepe quas quod porro corrupti, veniam officia temporibus alias! Voluptas explicabo, iste molestias nulla modi fuga natus quis aperiam doloribus fugit suscipit quos ea neque facere beatae perspiciatis culpa, inventore cupiditate similique non commodi. Natus, corporis? Vero autem possimus asperiores minus ad maxime quos corporis atque ducimus sint! Numquam consequuntur vero veritatis nulla inventore sit eligendi totam optio, explicabo cupiditate maiores in reiciendis? Quis debitis dolorum excepturi quidem quam eius deleniti, similique molestias. Nemo assumenda quidem consectetur aliquid aliquam. Quod impedit perspiciatis molestias explicabo culpa similique quibusdam, labore suscipit, necessitatibus quis aliquid repellendus distinctio animi non numquam est id cupiditate aut reiciendis itaque obcaecati. Mollitia et a, assumenda fugit consectetur inventore voluptate rerum, perspiciatis earum eligendi hic sapiente temporibus soluta saepe eveniet amet qui eum! Enim deleniti consequatur labore.</div>
+  <div>
+    <a href="#wrap" class="content-top"></a>
+  </div>
+</body>
+</html>

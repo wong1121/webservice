@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+</head>
+<body>
+  <h1>table 태그</h1>
+  <table border="1" width="50%"> 
+    <caption>과일정보</caption>
+    <thead>
+      <tr>
+        <th scope="col">번호</th> 
+        <th scope="col">과일명</th> 
+        <th scope="col">수량</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td> <td rowspan="2">사과 </td> <td>10</td>
+      </tr>
+      <tr>
+        <td>2</td><td>5</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">총수량</td> <td>15</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+</body>
+</html>

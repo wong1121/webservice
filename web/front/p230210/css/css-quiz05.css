@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 300px;
+  background-color: blueviolet;
+}
+#navigation {
+  background-color: #f00;
+  height: 50px;
+}
+#main {
+  clear: both;
+  height: 150px;
+  background-color: #ff0;
+}
+#main::after {
+  /* overflow: hidden; */
+  content: "";
+  display: block;
+  clear: both;
+}
+#main #left-menu {
+  float: left;
+  width: 50px;
+  height: 150px;
+  background-color: #0ff;
+}
+#main #content {
+  float: right;
+  width: 250px;
+  height: 150px;
+  background-color: #f0f;
+}
+#main #content #contain {
+  height: 100px;
+  background-color: blue;
+}
+#footer {
+  background-color: bisque;
+  height: 50px;
+}
