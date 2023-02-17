@@ -2,11 +2,12 @@ class ArrayStack{
 	//[field]
 	int[] arr;
 	int top = -1;
-	final int SIZE = arr.length -1;
+	final int SIZE;
 	
 	//생성자 추가하여 현재 Error 해결=============
-	ArrayStack() {
-		
+	public ArrayStack(int length) {
+		this.arr = new int[length];
+		SIZE = arr.length -1;
 	}
 		
 	// [method]
@@ -48,9 +49,8 @@ class ArrayStack{
 
 public class Quiz03 {
 	public static void main(String[] args) {
-		ArrayStack stack = new ArrayStack();
-		
-		stack.setArr(5);
+		ArrayStack stack = new ArrayStack(5);
+//		stack.setArr(5);
 		
 		stack.push(20);
 		stack.push(15);

@@ -4,6 +4,15 @@
     <fullyQualifiedTypeName name="Fruit"/>
     <fullyQualifiedTypeName name="java.awt.image.BaseMultiResolutionImage"/>
     <fullyQualifiedTypeName name="Baseball"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="one.TestA"/>
+    <fullyQualifiedTypeName name="area.CircleArea"/>
+    <fullyQualifiedTypeName name="per.CirclePerimeter"/>
+    <fullyQualifiedTypeName name="polymorphism.Banana"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="abstractclass.Test.Ex02"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
